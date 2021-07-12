@@ -42,3 +42,28 @@
     patch/more-gray-shades
     extension/more-gray-shades
     bugfix/mobile-guest-customer
+    
+   **Git Questions**
+   
+   1. Git : List all unmerged changes in git
+   ```
+   git branch --no-merged master
+   git branch --no-merged staging
+
+   https://stackoverflow.com/questions/3600728/git-list-all-unmerged-changes-in-git
+   ```
+   2. Git View branches by creation date
+   ```
+   git for-each-ref --sort='-authordate'
+   https://stackoverflow.com/questions/43214887/git-view-remote-branches-by-creation-date   
+   ```
+   3.How to see all local commits which are not pushed to the remote branch?
+   ```
+   git log --branches --not --remotes --no-walk --decorate --oneline
+
+   https://stackoverflow.com/questions/39220870/in-git-list-names-of-branches-with-unpushed-commits
+   https://stackoverflow.com/questions/30601511/how-to-see-all-local-commits-which-are-not-pushed-to-the-remote-branch
+   ```
+   4. How to find branches with uncommited changes
+
+
