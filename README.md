@@ -65,5 +65,11 @@
    https://stackoverflow.com/questions/30601511/how-to-see-all-local-commits-which-are-not-pushed-to-the-remote-branch
    ```
    4. How to find branches with uncommited changes
+   5. How can I know if a branch has been already merged into master?
+   ```
+   git branch --merged master
+   git branch --merged
+   https://stackoverflow.com/questions/226976/how-can-i-know-if-a-branch-has-been-already-merged-into-master
+   ```
 
 
