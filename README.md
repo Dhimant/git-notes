@@ -71,5 +71,12 @@
    git branch --merged
    https://stackoverflow.com/questions/226976/how-can-i-know-if-a-branch-has-been-already-merged-into-master
    ```
-
+   6. Git command to display HEAD commit id?
+   ```
+   git rev-parse HEAD
+   git rev-parse --short HEAD
+   git log -1
+   git log | head -n 1 
+   
+   ```
 
