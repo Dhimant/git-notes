@@ -108,14 +108,9 @@
    8. For Emergency rollback
    
    ```
-   Example Scenario: 
-   
-   So you commited and merged some branches to master and deployed changed to production, but now you realised that it is breaking the site
-   completely and you want to rollback immideialty 
-   
-   Example Scenario: 
-   
-   So you committed and merged some branches to master and deployed changed to production, but now you realised that it is breaking the site completely and you want to rollback immediately, because site is broke
+    Example Scenario: 
+
+    So you committed and merged some branches to master and deployed changed to production, but now you realised that it is breaking the site completely and you want to rollback immediately, because site is broke
 
     git reset --hard <old-commit-id>
 
