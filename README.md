@@ -79,4 +79,28 @@
    git log | head -n 1 
    
    ```
+   7. Git RollBack Pushed commits
+   ```
+   Example: You deployed the code after commit and now there are issues on production and you want to rollback
+   
+   Revert each commit one by one till to the branch you want to revert it back to, if there is any merge commit you must supply -m option usually with value 1
+   
+   https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit?noredirect=1&lq=1
+   https://stackoverflow.com/questions/5970889/why-does-git-revert-complain-about-a-missing-m-option
+   
+   git revert --no-commit f2851f28 
+   git revert --no-commit -m 1 7af9cc09    
+   git revert --no-commit 760cb679 
+   git revert --no-commit a4561389
+  
+   check your files after each revert
+   once done 
+   
+   git commit
+   
+   if you want to abort the revert
+   git revert --abort
+
+   
+   ```
 
