@@ -1,5 +1,7 @@
 # git-notes
 
+# Git can give you heart attack ! 
+
 **1. Match your local branch to remote branch**
 
     git fetch origin
@@ -103,4 +105,31 @@
 
    
    ```
+   8. For Emergency rollback
+   
+   ```
+   Example Scenario: 
+   
+   So you commited and merged some branches to master and deployed changed to production, but now you realised that it is breaking the site
+   completely and you want to rollback immideialty 
+   
+   Example Scenario: 
+   
+   So you committed and merged some branches to master and deployed changed to production, but now you realised that it is breaking the site completely and you want to rollback immediately, because site is broke
 
+    git reset --hard <old-commit-id>
+
+    -- hard reset to last known working commit on local
+
+    git push -f <remote-name> <branch-name>
+
+    -- push changes to remote
+
+    if the above push command does not work try the following
+    git push origin HEAD --force
+
+    https://stackoverflow.com/questions/4372435/how-can-i-rollback-a-git-repository-to-a-specific-commit
+   
+   ```
+    
+    
