@@ -1,6 +1,6 @@
 # git-notes
 
-# Git can give you heart attack ! 
+# Git can give you a heart attack ! 
 
 **1. Match your local branch to remote branch**
 
