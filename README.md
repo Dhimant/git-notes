@@ -1,4 +1,4 @@
-# git-notes
+# Git Notes
 
 # Git can give you a heart attack ! 
 
@@ -126,5 +126,40 @@
     https://stackoverflow.com/questions/4372435/how-can-i-rollback-a-git-repository-to-a-specific-commit
    
    ```
-    
+   9. Git Stash
+   
+   ```
+   Example Scenario:
+   You are working on a feature branch, it's not finished yet, and now you have a bug at production and have to move to another branch without commiting the current branch because your work is not complete yet. git stash is here for the rescue 
+   
+   https://www.atlassian.com/git/tutorials/saving-changes/git-stash
+   
+   Stashing your work
+
+   git status
+   git stash
+   git status
+   
+   Re-applying your stashed changes
+   
+   git status
+   git stash pop
+   
+   Above will only work for the files that are already tracked by git, new files won't be stashed, to stash new files track them using git add or use the below command
+   
+   git stash -u
+   or
+   git stash --include-untracked
+   
+   You can create multiple stash on same branch and list them using following command ( WIP means, Work In Progress )
+   git stash list  
+   
+   git stash pop will apply the most recent stash stash@{0}
+
+   You can choose which stash to re-apply by passing its identifier as the last argument, for example:
+   
+   git stash pop stash@{2}
+ 
+   
+   ```
     
