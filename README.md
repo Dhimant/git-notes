@@ -162,4 +162,14 @@
  
    
    ```
+   10. Create patch from commit
+
+   ```
+   git format-patch -1 {commitId}
+   -- The above command will genetate the .patch file
+   git apply m2-hotfixes/*.patch
+   -- Apply patch using git apply command
+
+   ```
+
     
