@@ -171,5 +171,14 @@
    -- Apply patch using git apply command
 
    ```
+   
+   11. find in which commit particular code appeared for the first time
+
+   ```
+   git log -S searchTerm
+
+   searchTerm is a piece of code that you want to find
+   
+   ```
 
     
